@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { VercelCMDK } from "./vercel";
+// import { VercelCMDK } from "./vercel";
 import * as Popover from "@radix-ui/react-popover";
 import "./App.css";
+import ReactCMDK from "./ReactCMDK";
 
 function CommandMenu() {
   const [open, setOpen] = useState(false);
@@ -23,7 +24,8 @@ function CommandMenu() {
       <Popover.Trigger className="trigger-button">cmd v</Popover.Trigger>
       {open && (
         <Popover.Content className="content">
-          <VercelCMDK />
+          {/* <VercelCMDK /> */}
+          <ReactCMDK />
         </Popover.Content>
       )}
     </Popover.Root>
